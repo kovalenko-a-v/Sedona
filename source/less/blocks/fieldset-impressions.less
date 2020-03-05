@@ -1,0 +1,138 @@
+.fieldset-impressions {
+  width: 280px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 11px;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@media (max-width: @mobile-width-only) {
+  .fieldset-impressions {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.fieldset-impressions__title {
+  padding-top: 20px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fieldset-impressions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset-impressions__item {
+  display: inline-flex;
+  position: relative;
+  width: 210px;
+  margin: 0 auto;
+  padding-left: 79px;
+  min-height: 56px;
+  margin-bottom: 13px;
+}
+
+.fieldset-impressions__item-title {
+  padding-top: 12px;
+}
+
+.fieldset-impressions__item-text {
+  margin-left: 19px;
+}
+
+.fieldset-impressions__input-radio + span {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+.fieldset-impressions__input-radio:checked + span {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 37px;
+    bottom: 18px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #333333;
+    cursor: pointer;
+
+    &:active {
+      background-color: #a4a4a4;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset-impressions {
+    width: 324px;
+    order: 0;
+  }
+
+  .fieldset-impressions__title {
+    width: 324px;
+    text-align: left;
+    font-size: 21px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  .fieldset-impressions__input-radio + span {
+    &::before {
+      left: 0;
+    }
+  }
+
+  .fieldset-impressions__input-radio:checked + span {
+    &::after {
+      left: 17px;
+    }
+  }
+
+  .fieldset-impressions__item {
+    margin-bottom: 22px;
+  }
+
+  .fieldset-impressions__item-text {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset-impressions {
+    width: 400px;
+    margin-right: 80px;
+  }
+
+  .fieldset-impressions__title {
+    margin-left: 80px;
+  }
+}

@@ -1,0 +1,43 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 130px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.copyright__text {
+  font-family: @main-font;
+  font-size: @main-font-size;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.copyright__icon {
+  width: 37px;
+  height: 44px;
+
+  path {
+    fill: #000000;
+  }
+
+  &:hover {
+    path {
+      fill: @site-theme;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #b2b2b2;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
+  }
+}

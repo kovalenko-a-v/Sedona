@@ -1,0 +1,27 @@
+.page-footer-wrapper {
+  padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+    padding: 36px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 85px;
+
+    &--form-page {
+      padding-top: 16px;
+    }
+  }
+}

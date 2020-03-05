@@ -1,0 +1,40 @@
+.feedback-header {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .feedback-header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.feedback-header__text {
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-header {
+    width: 648px;
+    margin-bottom: 37px;
+  }
+
+  .feedback-header__text {
+    width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-header {
+    margin-bottom: 23px;
+  }
+}

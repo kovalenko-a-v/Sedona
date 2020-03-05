@@ -1,0 +1,54 @@
+.page-footer {
+  background-color: #fefefe;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-footer__text {
+  font-family: @main-font;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-top: 39px;
+  padding-bottom: 36px;
+}
+
+.copyright__text {
+  font-family: @main-font;
+  font-size: @main-font-size;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.page-footer__social {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__text {
+    width: 196px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    width: 256px;
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    width: 196px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
+}

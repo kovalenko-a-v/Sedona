@@ -1,0 +1,247 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: @site-theme;
+}
+
+.site-list__item {
+  color: @white-color;
+  font-family: @main-font;
+  font-size: @title-font-size;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  order: 0;
+  border-bottom: 1px solid rgba(103, 143, 168, 0.39);
+  border-top: 1px solid rgba(154, 194, 219, 0.3);
+  text-align: center;
+  cursor: pointer;
+
+  &--panel {
+    background-color: @white-color;
+    order: 1;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.site-list__item-link {
+  text-align: center;
+  color: @white-color;
+  text-decoration: none;
+  margin: 0 auto;
+
+  &:active {
+    background-color: #5496bd;
+    opacity: 0.3;
+  }
+}
+
+.main-nav {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: 17px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: @white-color;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: @site-theme;
+  box-shadow: 0 8px 0 0 @site-theme, 0 16px 0 0 @site-theme;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 20px;
+  background-color: @site-theme;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 25px;
+    height: 4px;
+    background-color: @white-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .site-list__item-link {
+    display: block;
+    width: 320px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    &:active {
+      background-color: #5496bd;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    /*Временно для сетки*/
+    min-height: 56px;
+    background-color: @white-color;
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    background-color: @white-color;
+  }
+
+  .site-list__item {
+    width: 153px;
+    border: none;
+    margin-top: 7px;
+
+    &--panel {
+      width: 102px;
+      padding: 0;
+      margin: 0 27px;
+      order: 0;
+    }
+
+    &:hover {
+      background-color: @white-color;
+    }
+  }
+
+  .site-list__item-link {
+    color: @text-color;
+    font-size: 14px;
+    line-height: 26px;
+
+    &--active {
+      color: #766357;
+      cursor: default;
+
+      &:hover {
+        color: #604e43;
+        background-color: @white-color;
+      }
+
+      &:active {
+        color: #766357;
+        opacity: 0.3;
+        background-color: @white-color;
+      }
+    }
+  }
+
+  .site-list__item-link[href] {
+    &:hover {
+      color: @site-theme;
+      background-color: @white-color;
+    }
+
+    &:active {
+      color: @text-color;
+      opacity: 0.3;
+    }
+  }
+
+  .page-header__logo-image {
+    width: 102px;
+    height: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+
+  .main-nav {
+    background-color: @white-color;
+  }
+
+  .site-list {
+    width: 1200px;
+  }
+
+  .site-list__item {
+    width: 240px;
+
+    &--panel {
+      width: 188px;
+      margin: 0 28px;
+      order: 0;
+    }
+  }
+
+  .page-header__logo-image {
+    width: 188px;
+    height: 96px;
+  }
+}

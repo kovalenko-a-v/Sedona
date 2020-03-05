@@ -1,0 +1,161 @@
+.fieldset-sights {
+  width: 280px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: @main-font;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+@media (max-width: @mobile-width-only) {
+  .fieldset-sights {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.fieldset-sights__title {
+  padding-top: 20px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fieldset-sights__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fieldset-sights__item {
+  display: inline-flex;
+  position: relative;
+  width: 129px;
+  margin: 0 auto;
+  padding-left: 79px;
+  min-height: 56px;
+  margin-bottom: 24px;
+}
+
+.fieldset-sights__item-title {
+  padding-top: 12px;
+}
+
+.fieldset-sights__item-text {
+  margin-left: 19px;
+}
+
+.fieldset-sights__input-checkbox + span {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 19px;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+.fieldset-sights__input-checkbox:checked + span {
+  &::after {
+    content: url"(../img/icon-tick.svg)";
+    position: absolute;
+    left: 37px;
+    bottom: 18px;
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset-sights {
+    width: 648px;
+    order: 3;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .fieldset-sights__title {
+    width: 280px;
+    font-size: 21px;
+    padding-top: 5px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 42px;
+  }
+
+  .fieldset-sights__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 553px;
+    margin-left: 77px;
+  }
+
+  .fieldset-sights__item {
+    margin-left: 0;
+    margin-bottom: 34px;
+
+    &:nth-child(odd) {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset-sights {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fieldset-sights__list {
+    width: 960px;
+    margin-left: 0;
+  }
+
+  .fieldset-sights__item {
+    display: flex;
+    justify-content: space-around;
+    width: 122px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .fieldset-sights__item-text {
+    margin-left: 2px;
+  }
+
+  .fieldset-sights__input-checkbox + span {
+    &::before {
+      left: 0;
+    }
+  }
+
+  .fieldset-sights__input-checkbox:checked + span {
+    &::after {
+      left: 17px;
+    }
+  }
+}
