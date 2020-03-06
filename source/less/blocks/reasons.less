@@ -106,51 +106,33 @@
   padding-left: 70px;
   padding-right: 20px;
   padding-top: 30px;
+}
 
-  &--house {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 20px;
-      top: 20px;
-      width: 39px;
-      height: 37px;
-      background: url("../img/icon-house.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
+.sublist__item-icon-gift {
+  position: absolute;
+  left: 25px;
+  top: 17px;
+  width: 32px;
+  height: 38px;
+  fill: @site-theme;
+}
 
-  &--souvenirs {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 25px;
-      top: 15px;
-      width: 32px;
-      height: 38px;
-      /*background: url("../img/icon-gift.svg");*/
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
+.sublist__item-icon-house {
+  position: absolute;
+  left: 20px;
+  top: 21px;
+  width: 39px;
+  height: 37px;
+  fill: @site-theme;
+}
 
-  &--food {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 18px;
-      top: -4px;
-      width: 40px;
-      height: 37px;
-      background: url("../img/icon-burger.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
+.sublist__item-icon-burger {
+  position: absolute;
+  left: 17px;
+  top: -5px;
+  width: 40px;
+  height: 35px;
+  fill: @site-theme;
 }
 
 
@@ -308,33 +290,27 @@ input[type="radio"].visually-hidden {
     padding-top: 160px;
     padding-bottom: 60px;
     order: 0;
+  }
 
-    &--house {
-      &::before {
-      width: 75px;
-      height: 72px;
-      top: 60px;
-      left: 91px;
-      }
-    }
+  .sublist__item-icon-gift {
+    width: 64px;
+    height: 75px;
+    top: 57px;
+    left: 95px;
+  }
 
-    &--food {
-      &::before {
-      width: 77px;
-      height: 68px;
-      top: 64px;
-      left: 90px;
-      }
-    }
+  .sublist__item-icon-house {
+    width: 75px;
+    height: 72px;
+    top: 60px;
+    left: 91px;
+  }
 
-    &--souvenirs {
-      &::before {
-        width: 64px;
-        height: 75px;
-        top: 57px;
-        left: 95px;
-      }
-    }
+  .sublist__item-icon-burger {
+    width: 77px;
+    height: 68px;
+    top: 64px;
+    left: 90px;
   }
 
   .sublist__item:last-child {
@@ -385,24 +361,18 @@ input[type="radio"].visually-hidden {
   .sublist__item {
     width: 400px;
     padding-bottom: 80px;
+  }
 
-    &--house {
-      &::before {
-      left: 161px;
-      }
-    }
+  .sublist__item-icon-gift {
+    left: 165px;
+  }
 
-    &--food  {
-      &::before {
-      left: 160px;
-      }
-    }
+  .sublist__item-icon-house {
+    left: 161px;
+  }
 
-    &--souvenirs {
-    &::before {
-      left: 165px;
-    }
-    }
+  .sublist__item-icon-burger {
+    left: 160px;
   }
 
   .sublist__description {

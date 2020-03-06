@@ -73,10 +73,13 @@
 
 .fieldset-sights__input-checkbox:checked + span {
   &::after {
-    content: url"(../img/icon-tick.svg)";
+    content: "";
     position: absolute;
-    left: 37px;
-    bottom: 18px;
+    width: 56px;
+    height: 56px;
+    left: 19px;
+    bottom: 1px;
+    background: url("../img/icon-tick.svg") no-repeat center;
   }
 
   &:active {
@@ -155,7 +158,7 @@
 
   .fieldset-sights__input-checkbox:checked + span {
     &::after {
-      left: 17px;
+      left: 0;
     }
   }
 }

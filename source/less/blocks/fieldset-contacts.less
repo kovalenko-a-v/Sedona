@@ -7,7 +7,7 @@
   padding-right: 20px;
   padding-bottom: 28px;
   font-family: @main-font;
-  font-size: 14px;
+  font-size: @main-font-size;
   line-height: 26px;
   text-transform: uppercase;
 }
@@ -51,18 +51,21 @@
   margin-bottom: 13px;
 }
 
-.fieldset-contacts__icon-tel,
+.fieldset-contacts__icon-tel {
+  position: absolute;
+  bottom: -20px;
+  width: 58px;
+  height: 58px;
+  background: url("../img/icon-phone.svg") no-repeat center;
+  background-color: #e6e6e6;
+}
+
 .fieldset-contacts__icon-mail {
   position: absolute;
   bottom: -20px;
   width: 58px;
   height: 58px;
-  background: url"(../img/icon-phone.svg)" no-repeat center;
-  background-color: #e6e6e6;
-}
-
-.fieldset-contacts__icon-mail {
-  background: url"(../img/icon-mail.svg)" no-repeat center;
+  background: url("../img/icon-phone.svg") no-repeat center;
   background-color: #e6e6e6;
 }
 
@@ -128,9 +131,12 @@
     width: 550px;
   }
 
-  .fieldset-contacts__icon-mail,
   .fieldset-contacts__icon-tel {
-    position: absolute;
+    right: 0;
+    top: 32px;
+  }
+
+  .fieldset-contacts__icon-mail {
     right: 0;
     top: 32px;
   }

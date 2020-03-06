@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div style="display:none">
@@ -18,7 +18,7 @@
               <a class="site-list__item-link site-list__item-link--active">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link" href="#">Фото и видео</a>
+              <a class="site-list__item-link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item--panel">
               <a class="page-header__logo">
@@ -30,10 +30,10 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link" href="#">Форма отзыва</a>
+              <a class="site-list__item-link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link" href="#">Html Academy</a>
+              <a class="site-list__item-link" href="https://htmlacademy.ru">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -62,22 +62,31 @@
               <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@1x.jpg 2x">
               <img class="reasons__item-image" src="img/main-city-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
             </picture>
-            <ul class="reasons__item__sublist sublist">
+            <ul class="reasons__item sublist">
               <li class="sublist__item sublist__item--house">
+                <svg class="sublist__item-icon-house" viewbox="0 0 75 72" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-house"></use>
+                </svg>
                 <h4 class="sublist__title">Жилье</h4>
                 <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="sublist__item sublist__item--souvenirs">
+                <svg class="sublist__item-icon-gift" viewbox="0 0 32 38" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-gift"></use>
+                </svg>
                 <h4 class="sublist__title">Сувениры</h4>
                 <p class="sublist__description">Не только Китайского,<br> но и местного производства!</p>
               </li>
               <li class="sublist__item sublist__item--food">
+                <svg class="sublist__item-icon-burger" viewbox="0 0 77 68" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-burger"></use>
+                </svg>
                   <h4 class="sublist__title">Еда</h4>
                   <p class="sublist__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
-          <li class="reasons__item reasons__item">
+          <li class="reasons__item">
             <div class="reasons__item-panel reasons__item-panel--blue">
               <h3 class="reasons__title">Там есть мост дьявола</h3>
               <span class="reasons__number">— №2 —</span>
@@ -155,8 +164,8 @@
             <li class="social-item">
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Фэйсбук</span>
-                <svg class="social__icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
+                <svg class="social__icon social__icon--facebook" viewBox="0 0 8.672 18.944" aria-hidden="true" focusable="false">
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
