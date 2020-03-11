@@ -20,7 +20,7 @@
   background-image:  url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom 0 left 50%;
+  background-position: bottom, left 50%;
   background-size: cover, cover;
   width: 320px;
   height: 389px;
@@ -28,7 +28,7 @@
   margin: 0 auto;
 
   &--inner {
-    height: 158px;
+    height: 157px;
     background-position: bottom 0 center, center 0;
   }
 
@@ -36,7 +36,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg"), 
       url("../img/bg-back-mobile@2x.jpg");
     /*background-size: 1536px auto;*/
-    background-position: bottom 0 left 50%;
+    background-position: bottom, left 50%;
     background-size: cover, cover;
   }
 }
@@ -68,13 +68,13 @@
     background-repeat: no-repeat, no-repeat;
     background-position: center 461px, center 0;
     background-size: contain;
-    height: 518px;
+    height: 517px;
     min-width: @tablet-width;
 
     &--inner {
       width: 768px;
-      height: 290px;
-      background-position: bottom 0 left 0, center 0;
+      max-height: 289px;
+      background-position: center 236px, center 0;
       background-size: contain, cover;
     }
 
@@ -121,19 +121,19 @@
     background-image: url("../img/bg-intro-triangle-desktop.svg"),
       url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center 245px, center;
-    height: 519px;
+    /*background-position: 0 center, center 0;*/
+    height: 518px;
     width: 1200px;
 
     &--inner {
-      height: 301px;
+      height: 300px;
     }
 
     @media (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-intro-triangle-desktop.svg"),
       url("../img/bg-back-desktop@2x.jpg");
       background-size: 1200px auto, cover;
-      background-position: center 245px, center;
+      /*background-position: center 245px, center;*/
     }
   }
 
